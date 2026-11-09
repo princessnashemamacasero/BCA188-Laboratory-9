@@ -1,8 +1,8 @@
-INTRODUCTION
+**Introduction**
 
 This activity focuses on using the WiFiManager library with an ESP32-S3 to connect to a Wi-Fi network. Instead of manually entering Wi-Fi credentials in the code, WiFiManager provides a configuration page where users can select a network and enter its password. The activity also demonstrates how to reset saved Wi-Fi settings, change the access point name, and connect to different networks.
 
-OBJECTIVES
+**Objectives**
 
 At the end of this activity, you should be able to:
 
@@ -18,7 +18,7 @@ At the end of this activity, you should be able to:
 
 - Connect the ESP32 to another Wi-Fi network without changing the program.
 
-Materials Used
+**Materials Used**
 
 - ESP32-S3 Development Board
 
@@ -34,7 +34,7 @@ Materials Used
 
 - Available Wi-Fi connection or mobile hotspot
 
-Setup Configuration
+**Setup Configuration**
 
 1. Connect the ESP32-S3 board to the computer using a USB cable.
 
@@ -56,7 +56,7 @@ Setup Configuration
 
 10. Connect a smartphone to the ESP32 access point and open http://192.168.4.1 to access the Wi-Fi configuration page.
 
-BCA188-ESP32-2024-2220
+**BCA188-ESP32-2024-2220**
 
 <img width="547" height="581" alt="Screenshot 2026-11-09 190955" src="https://github.com/user-attachments/assets/17b4eefc-1ce6-4c2e-ae16-9d7077731275" />
 
@@ -68,7 +68,7 @@ Wi-Fi Manager Setup Page
 
  <img width="739" height="390" alt="Screenshot 2026-11-09 191646" src="https://github.com/user-attachments/assets/86436673-afcc-4a9c-9c49-8f03b8b33b19" />
 
- Practice Tasks
+**Practice Tasks**
 
 Task 1: Test an Incorrect Wi-Fi Password
 
@@ -96,7 +96,7 @@ Used a mobile hotspot as the new Wi-Fi network. The ESP32 connected successfully
 
 <img width="1906" height="1012" alt="Screenshot 2026-11-09 200905" src="https://github.com/user-attachments/assets/032111fc-baa6-421f-852e-d638afbde986" />
 
-Results and Observations
+**Results and Observations**
 
 | Task                 | What to do                                                            | What I observed                                                                                                            |
 | :------------------: | :-------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
@@ -105,11 +105,11 @@ Results and Observations
 | 3. Change the Name   | 	Change the network name, upload, and check your phone’s Wi-Fi list.	 | The access point name was successfully changed to BCA188-ESP32-2024-2220-TEST and appeared in the phone's Wi-Fi list.      |
 | 4. Different Network | 	Reset the board, then connect to your phone hotspot.                 | The ESP32 successfully connected to the mobile hotspot and displayed its assigned IP address in the Serial Monitor.        |
 
-Explanation
+**Explanation**
 
 The board can connect to a different Wi-Fi network without changing the code because WiFiManager saves the Wi-Fi credentials in the ESP32's memory. This allows the board to use the saved credentials or configure a new network without modifying the program.
 
-Conclusion
+**Conclusion**
 
 In this activity, I learned how to use WiFiManager to connect an ESP32 to a Wi-Fi network. I also learned how to reset saved credentials, change the access point name, and connect the board to another network.
 
